@@ -2,7 +2,7 @@ export function mediaMarkup(item, fallbackLabel, options = {}) {
   if (item?.src && item.type === "video") {
     const controls = options.controls === false ? "" : " controls";
     const muted = options.muted ? " muted" : "";
-    const autoplay = options.autoplay ? " autoplay data-autoplay" : "";
+    const autoplay = options.autoplay === false ? "" : " autoplay data-autoplay";
     return `<video src="${item.src}"${controls}${muted} loop playsinline${autoplay} preload="metadata"></video>`;
   }
   if (item?.src && item.type === "image") {
