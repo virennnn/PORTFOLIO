@@ -73,7 +73,7 @@ function mfcSlots() {
     .map(
       (item) => `
       <div class="media-slot paper">
-        ${mediaMarkup(item.src ? item : null, item.label)}
+        ${mediaMarkup(item.src ? item : null, item.label, { muted: true })}
       </div>`
     )
     .join("");
@@ -89,7 +89,7 @@ function mfcCarousel() {
             (item, index) => `
               <div class="mfc-carousel-slide${index === 0 ? " is-active" : ""}" data-carousel-slide>
                 <div class="media-slot paper">
-                  ${mediaMarkup(item.src ? item : null, item.label)}
+                  ${mediaMarkup(item.src ? item : null, item.label, { muted: true })}
                 </div>
               </div>`
           )
