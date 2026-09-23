@@ -1045,8 +1045,13 @@ section[id] {
 
   .project-card,
   .project-card[data-size="featured"],
+  .project-card[data-size="wide"],
   .project-card[data-size="tall"],
   .project-card[data-size="standard"] {
-    min-height: 340px;
+    min-height: 280px;
+  }
+
+  .project-media {
+    min-height: 180px;
   }
 }
