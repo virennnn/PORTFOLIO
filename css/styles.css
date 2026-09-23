@@ -1031,12 +1031,13 @@ section[id] {
   }
 
   .graphic-project-items {
-    overflow-x: auto;
-    padding-bottom: 8px;
+    flex-direction: column;
+    gap: 18px;
   }
 
   .graphic-project-items .project-card {
-    flex: 0 0 220px;
+    flex: none;
+    width: 100%;
   }
 
   .project-card.project-one {
