@@ -1025,11 +1025,18 @@ section[id] {
   }
 
   .graphic-project-row {
-    min-width: 920px;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
   }
 
-  .graphic-project-row .project-card {
-    min-width: 220px;
+  .graphic-project-items {
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+
+  .graphic-project-items .project-card {
+    flex: 0 0 220px;
   }
 
   .project-card.project-one {
