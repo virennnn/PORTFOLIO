@@ -23,6 +23,8 @@ document.getElementById("case").innerHTML = `
         cover
           ? `<div class="media-slot">${mediaMarkup(cover, project.title, {
               controls: project.id === "01",
+              autoplay: true,
+              muted: true,
             })}</div>`
           : `<div class="case-empty">
               <div>
@@ -53,6 +55,8 @@ document.getElementById("case").innerHTML = `
               (item) =>
                 `<div class="media-slot">${mediaMarkup(item, project.title, {
                   controls: project.id === "01",
+                  autoplay: true,
+                  muted: true,
                 })}</div>`
             )
             .join("")}</div>`

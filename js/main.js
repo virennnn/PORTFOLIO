@@ -21,7 +21,7 @@ function heroMedia() {
     <div class="hero-visual reveal d3">
       <div class="media-slot">
         <span class="hero-mark" aria-hidden="true"></span>
-        ${mediaMarkup(item, SITE.heroMedia.label)}
+        ${mediaMarkup(item, SITE.heroMedia.label, { autoplay: true })}
       </div>
     </div>`;
 }
@@ -49,7 +49,7 @@ function projectCard(project) {
       <div class="project-media">
         ${
           media
-            ? mediaMarkup(media, project.title)
+            ? mediaMarkup(media, project.title, { autoplay: project.id === "01" })
             : `<div class="project-placeholder">
                 <div>
                   <span>${project.number}</span>
