@@ -468,11 +468,15 @@ section[id] {
 .project-one .project-media {
   flex: 1 1 auto;
   min-height: 0;
-  aspect-ratio: 16 / 9;
 }
 
 .project-one .project-media video,
 .project-one .project-media img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: min(640px, 70svh);
+  margin-inline: auto;
   object-fit: contain;
   background: #141414;
 }
