@@ -288,6 +288,10 @@ section[id] {
   object-fit: cover;
 }
 
+.case .media-slot video {
+  object-fit: contain;
+}
+
 .slot-label {
   position: absolute;
   inset: 0;
