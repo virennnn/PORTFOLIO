@@ -32,7 +32,7 @@ export const PROJECTS = [
     tools: ["Premiere Pro", "After Effects"],
     link: "",
     size: "featured",
-    media: [{ type: "video", src: "media/projects/01/0928.mp4" },
+    media: [{ type: "video", src: "media/projects/01/01389AA0-DE8B-43F6-8E43-403FEDA1D9BD.MP4" },
   { type: "video", src: "media/projects/01/Club is never the intention jus wanna bring in crazy ppl and have fun ......Mysore Running, Myso.mp4" },
   { type: "video", src: "media/projects/01/vid3.mp4" },
   { type: "video", src: "media/projects/01/vidno1.mp4" },

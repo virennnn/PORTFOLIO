@@ -456,6 +456,11 @@ section[id] {
   background: #141414;
 }
 
+.project-one .project-media video,
+.project-card.project-one:hover .project-media video {
+  transform: none;
+}
+
 .project-one .project-meta {
   flex: 0 0 220px;
   flex-direction: column;
