@@ -1025,19 +1025,11 @@ section[id] {
   }
 
   .graphic-project-row {
-    width: 100%;
-    min-width: 0;
-    overflow: hidden;
+    min-width: 920px;
   }
 
-  .graphic-project-items {
-    flex-direction: column;
-    gap: 18px;
-  }
-
-  .graphic-project-items .project-card {
-    flex: none;
-    width: 100%;
+  .graphic-project-row .project-card {
+    min-width: 220px;
   }
 
   .project-card.project-one {
@@ -1053,13 +1045,8 @@ section[id] {
 
   .project-card,
   .project-card[data-size="featured"],
-  .project-card[data-size="wide"],
   .project-card[data-size="tall"],
   .project-card[data-size="standard"] {
-    min-height: 280px;
-  }
-
-  .project-media {
-    min-height: 180px;
+    min-height: 340px;
   }
 }
